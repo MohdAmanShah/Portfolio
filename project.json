@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "name": "BookWebStore",
+      "imageurl": "https://uicookies.com/wp-content/uploads/2019/05/fluence-html-bookstore-website-template.jpg",
+      "discription": "An immersive ASP.NET-based bookstore ecommerce website offering a user-friendly platform to explore, purchase, and discover a vast collection of books, seamlessly blending modern design with efficient functionality for a delightful online shopping experience."
+    },
+    {
+      "name": "MovieHub",
+      "imageurl": "https://c2.staticflickr.com/2/1833/43977997941_4ef4167683_b.jpg",
+      "discription": "A dynamic movie streaming website, crafted with HTML, CSS, and JavaScript, providing an engaging interface for users to seamlessly browse, stream, and enjoy a diverse range of films with responsive design and intuitive navigation."
+    },
+    {
+      "name": "MusicStreamingSite",
+      "imageurl": "https://uizard.io/static/fbaadb6a23374b862101dc62471ba4fc/d9bdf/music-streaming-web-app-cover.png",
+      "discription": "An interactive music streaming platform, elegantly designed with HTML, CSS, and JavaScript, delivering a seamless audio experience by enabling users to explore, play, and discover a vast catalog of tunes with user-friendly controls and modern aesthetics"
+    }
+  ]
+}

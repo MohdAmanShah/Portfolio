@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 10px;
+}
+Nav {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+}
+.navbar {
+  padding: 5px;
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
+.navbar a {
+  text-decoration: none;
+  color: whitesmoke;
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.selectedNavItem {
+  border-bottom: 2px solid red;
+}
+section {
+  height: 100vh;
+  margin-bottom: 20px;
+  border-bottom: 2px solid gray;
+}
+
+Footer {
+  padding: 10px;
+}
+
+.contactform label {
+  display: block;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.intro h1 {
+  align-self: center;
+  font-size: 3rem;
+  color: purple;
+}
+
+.intro span {
+  color: black;
+  font-size: 3rem;
+}
+.intro h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+.intro h3{
+  align-self: center;
+  font-size:2rem;
+  padding: 10px 5px;
+  border-radius:5px;
+  background-color: rgba(128, 128, 128, 0.372);
+}
