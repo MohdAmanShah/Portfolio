@@ -6,15 +6,20 @@
 body {
   padding: 10px;
 }
+body::-webkit-scrollbar {
+  display: none;
+}
 Nav {
   position: fixed;
+  width: 100vw;
   top: 10px;
-  width: 100%;
-  padding: 10px;
+  left: 0px;
+  padding: 5px 25px;
   background-color: black;
 }
 .navbar {
-  padding: 5px;
+  z-index: 123;
+  padding: 15px 5px;
   display: flex;
   justify-content: end;
   gap: 30px;
@@ -33,7 +38,7 @@ Nav {
 section {
   height: 100vh;
   margin-bottom: 20px;
-  border-bottom: 2px solid gray;
+  border-bottom: 2px solid purple;
 }
 
 Footer {
@@ -47,17 +52,20 @@ Footer {
 .intro {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 }
-.intro div{
+.introwrapper {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  gap: 20px;
+}
+.namecard {
+  text-align: center;
 }
 .intro h1 {
-  align-self: center;
   font-size: 3rem;
   color: purple;
 }
@@ -70,10 +78,73 @@ Footer {
   font-size: 4rem;
   text-align: center;
 }
-.intro h3{
-  align-self: center;
-  font-size:2rem;
+.intro h3 {
+  font-size: 2rem;
   padding: 10px 5px;
-  border-radius:5px;
-  background-color: rgba(128, 128, 128, 0.372);
+  color: purple;
+  border-radius: 5px;
+  border: 1px solid purple;
+  cursor: pointer;
+}
+.intro h3:hover {
+  background-color: purple;
+  color: white;
+}
+.socials {
+  display: flex;
+  gap: 40px;
+  justify-self: flex-end;
+}
+
+/* about me section */
+
+.aboutme {
+  display: flex;
+  justify-content: center;
+  padding: 100px 20px;
+}
+
+.aboutmecard {
+  border: 1px solid purple;
+  height: fit-content;
+  padding: 50px 20px;
+  flex: 0 1 30%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.card h2 {
+  font-size: 2rem;
+  color: purple;
+  margin-bottom: 20px;
+}
+.card h3 {
+  font-size: 1.5rem;
+}
+.cardsocials {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.resumebutton {
+  padding: 10px;
+  border: 1px solid purple;
+  border-radius: 5px;
+}
+.resumebutton:hover {
+  background-color: purple;
+  color: white;
+}
+.resumebutton a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 10px;
+}
+.aboutmeintro {
+  padding: 20px;
+  flex: 1 1 auto;
 }
