@@ -1,150 +1,46 @@
+@import url(./Navigation/navigation.css);
+:root {
+  --bg-color: #051622;
+  --fg-secondary: #1ba098;
+  --fg-primary: #deb992;
+
+  /* font family */
+  --body-heading: Verdana, Geneva, Tahoma, sans-serif;
+  --banner-text: Helvetica, Arial Narrow;
+  --body-text: sans-serif;
+
+  /* Transitions */
+  --hamrburger-button: transform 300ms ease;
+}
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  padding: 10px;
+  background-color: var(--bg-color);
 }
-body::-webkit-scrollbar {
-  display: none;
-}
-Nav {
-  position: fixed;
-  width: 100vw;
-  top: 10px;
-  left: 0px;
-  padding: 5px 25px;
-  background-color: black;
-}
-.navbar {
-  z-index: 123;
-  padding: 15px 5px;
-  display: flex;
-  justify-content: end;
-  gap: 30px;
-}
-.navbar a {
-  text-decoration: none;
-  color: whitesmoke;
-  border: none;
-  background: none;
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-.selectedNavItem {
-  border-bottom: 2px solid red;
-}
-section {
-  height: 100vh;
-  margin-bottom: 20px;
-  border-bottom: 2px solid purple;
+.app{
+  background-color: var(--bg-color);
 }
 
-Footer {
-  padding: 10px;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
 }
 
-.contactform label {
-  display: block;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 }
 
-.intro {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.introwrapper {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.namecard {
-  text-align: center;
-}
-.intro h1 {
-  font-size: 3rem;
-  color: purple;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
 }
 
-.intro span {
-  color: black;
-  font-size: 3rem;
-}
-.intro h2 {
-  font-size: 4rem;
-  text-align: center;
-}
-.intro h3 {
-  font-size: 2rem;
-  padding: 10px 5px;
-  color: purple;
-  border-radius: 5px;
-  border: 1px solid purple;
-  cursor: pointer;
-}
-.intro h3:hover {
-  background-color: purple;
-  color: white;
-}
-.socials {
-  display: flex;
-  gap: 40px;
-  justify-self: flex-end;
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }
 
-/* about me section */
-
-.aboutme {
-  display: flex;
-  justify-content: center;
-  padding: 100px 20px;
-}
-
-.aboutmecard {
-  border: 1px solid purple;
-  height: fit-content;
-  padding: 50px 20px;
-  flex: 0 1 30%;
-}
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  text-align: center;
-}
-.card h2 {
-  font-size: 2rem;
-  color: purple;
-  margin-bottom: 20px;
-}
-.card h3 {
-  font-size: 1.5rem;
-}
-.cardsocials {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-.resumebutton {
-  padding: 10px;
-  border: 1px solid purple;
-  border-radius: 5px;
-}
-.resumebutton:hover {
-  background-color: purple;
-  color: white;
-}
-.resumebutton a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  padding: 10px;
-}
-.aboutmeintro {
-  padding: 20px;
-  flex: 1 1 auto;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

@@ -4,8 +4,9 @@ export async function makeProjects() {
     object = await object.text();
     object = JSON.parse(object);
     let projects = document.getElementsByClassName('projects')[0]
+    let html = "";
     for (var i = 0; i < object.projects.length; ++i) {
-        projects.innerHTML += `<div class="projectcard">
+        html += `<div class="projectcard">
             <div class="cardimage">
                 <img src="${object.projects[i].imageurl}" width="100px" />
             </div>
@@ -15,4 +16,5 @@ export async function makeProjects() {
             </div>
         </div>`;
     }
+    projects.innerHTML = html;
 }
