@@ -12,7 +12,7 @@
     justify-content: space-between;
   }
   .nav-toggle {
-    z-index: 100;
+    z-index: 300;
     padding: 0.5em;
     width: 50px;
     height: 50px;
@@ -60,6 +60,7 @@
     transition: var(--hamrburger-button);
   }
   .navigation {
+    z-index: 200;
     position: absolute;
     top: 0;
     left: 0;
@@ -111,19 +112,21 @@
     background-color: var(--fg-primary);
   }
   .navbar-nav {
+    z-index: 200;
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: start;
+    padding-top: 2em;
     padding-left: 2em;
-    gap: 10px;
+    gap: 1em;
   }
   .nav-link {
     text-decoration: none;
     color: darkcyan;
     user-select: none;
     font-family: var(--banner-text);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 900;
     padding-bottom: 2px;
   }

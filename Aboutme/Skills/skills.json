@@ -1,0 +1,44 @@
+{
+  "skills": [
+    {
+      "name": "HTML",
+      "imageurl": "Aboutme\\Skills\\\\Images\\htmllogo.svg"
+    },
+    {
+      "name": "CSS",
+      "imageurl": "Aboutme\\Skills\\Images\\csslogo.svg"
+    },
+    {
+      "name": "JavaScript",
+      "imageurl": "Aboutme\\Skills\\Images\\jslogo.svg"
+    },
+    {
+      "name": "ASP.NET",
+      "imageurl": "Aboutme\\Skills\\Images\\dotnetlogo.svg"
+    },
+    {
+      "name": "PYTHON",
+      "imageurl": "Aboutme\\Skills\\Images\\pythonlogo.svg"
+    },
+    {
+      "name": "BOOTSTRAP",
+      "imageurl": "Aboutme\\Skills\\Images\\bootstraplogo.svg"
+    },
+    {
+      "name": "GIT",
+      "imageurl": "Aboutme\\Skills\\Images\\gitlogo.svg"
+    },
+    {
+      "name": "C/C++",
+      "imageurl": "Aboutme\\Skills\\Images\\cpplogo.svg"
+    },
+    {
+      "name":"Node.JS",
+      "imageurl":"Aboutme\\Skills\\Images\\nodejslogo.svg"
+    },
+    {
+      "name":"Figma",
+      "imageurl":"Aboutme\\Skills\\Images\\figmalogo.svg"
+    }
+  ]
+}

@@ -1,4 +1,6 @@
-import { makeProjects } from "./Projects/projects.js";
-import { makeTools } from "./Aboutme/Skills/tools.js";
+import { RenderProjects } from "./Projects/projects.js";
+import {RenderSkills} from "./Aboutme/Skills/skills.js"
 import { makeHamburgerEvent } from "./Navigation/navigation.js";
 makeHamburgerEvent();
+RenderSkills();
+RenderProjects();

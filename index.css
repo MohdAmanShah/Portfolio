@@ -1,5 +1,9 @@
 @import url(./Navigation/navigation.css);
 @import url(./Banner/banner.css);
+@import url(./Aboutme/aboutme.css);
+@import url(./Aboutme/Skills/skills.css);
+@import url(./Projects/project.css);
+@import url(./ContactMe/contactme.css);
 :root {
   --bg-color: #051622;
   --fg-secondary: #1ba098;
@@ -22,13 +26,27 @@
 body {
   background-color: var(--bg-color);
 }
-.app{
+.app {
   background-color: var(--bg-color);
 }
 
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  footer {
+    color: white;
+    border-top: 2px solid white;
+    padding: 2em 0.5em;
+    font-family: var(--body-text);
+  }
+  footer a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--fg-primary);
+    font-size: 1.25em;
+  }
+  footer a:visited{
+    color: var(--fg-primary);
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

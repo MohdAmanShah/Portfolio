@@ -1,40 +1,44 @@
 @media only screen and (max-width: 600px) {
-  .projectssection {
-    width: 100%;
+  .aboutme {
     color: white;
-    padding: 0.5em;
     margin-bottom: 2em;
   }
-  .sectionHeading {
+  .personal-information {
+    display: none;
+  }
+  .aboutmeintro {
+    padding: 10px;
+  }
+  .aboutmeHeading {
     font-family: var(--body-heading);
     font-size: 2rem;
     color: var(--fg-primary);
     border-bottom: 2px solid white;
-    margin-bottom: 1.2em;
   }
-  .projects {
-    width: inherit;
-    display: flex;
-    overflow-x: scroll;
-    scrollbar-width: inherit;
-    gap: 1.25em;
+  div[role="introduction"] {
+    padding: 10px;
+    padding-top: 30px;
   }
-  .project {
-    flex: 1 0 100%;
-    width: inherit;
+  div[role="introduction"] strong {
+    color: var(--fg-secondary);
+  }
+  div[role="introduction"] p {
     font-family: var(--body-text);
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.25em;
+    margin-bottom: 10px;
   }
-  .projectposter {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 20px;
+  .para4::first-line {
+    color: var(--fg-primary);
+    font-size: 1.5em;
   }
-  .projectposter img {
-    width: inherit;
-    height: inherit;
-  }
-  .projectDesp {
-    display: none;
+  .buildtogether {
+    font-size: 1em;
+    line-height: 1.5em;
+    text-decoration: none;
+    border-bottom: 2px solid var(--fg-secondary);
+    color: white;
   }
 }
 
