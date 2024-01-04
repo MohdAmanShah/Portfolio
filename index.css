@@ -1,4 +1,5 @@
 @import url(./Navigation/navigation.css);
+@import url(./Banner/banner.css);
 :root {
   --bg-color: #051622;
   --fg-secondary: #1ba098;
@@ -24,6 +25,7 @@ body {
 .app{
   background-color: var(--bg-color);
 }
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
