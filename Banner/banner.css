@@ -1,43 +1,53 @@
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--banner-text);
+  color: white;
+  user-select: none;
+}
+.namecard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.himessage {
+  font-family: var(--body-text);
+}
+.name {
+  color: var(--fg-primary);
+}
+.role {
+  width: fit-content;
+  background-color: var(--fg-primary);
+  color: var(--bg-color);
+  border-radius: 5px;
+}
+.contactmebanner {
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid red;
+}
+
 @media only screen and (max-width: 600px) {
-  .banner {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--banner-text);
-    color: white;
-    user-select: none;
-  }
-  .namecard {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
   .himessage {
     margin-bottom: 0.1em;
     font-size: 1.5em;
-    font-family: var(--body-text);
   }
   .name {
     font-size: 2.3em;
-    color: var(--fg-primary);
     margin-bottom: 0.5em;
   }
   .role {
     font-size: 1.5em;
-    width: fit-content;
-    border: 1px solid whitesmoke;
     padding: 10px 30px;
-    background-color: var(--fg-primary);
-    color: var(--bg-color);
     border-radius: 5px;
     margin-bottom: 1em;
   }
   .contactmebanner {
     font-size: 1.5em;
-    text-decoration: none;
-    color: white;
-    border-bottom: 2px solid red;
   }
 }

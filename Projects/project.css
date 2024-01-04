@@ -5,13 +5,6 @@
     padding: 0.5em;
     margin-bottom: 2em;
   }
-  .sectionHeading {
-    font-family: var(--body-heading);
-    font-size: 2rem;
-    color: var(--fg-primary);
-    border-bottom: 2px solid white;
-    margin-bottom: 1.2em;
-  }
   .projects {
     width: inherit;
     display: flex;

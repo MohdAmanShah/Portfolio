@@ -25,27 +25,45 @@
 
 body {
   background-color: var(--bg-color);
+  width: 100vw;
 }
 .app {
   background-color: var(--bg-color);
 }
 
+.sectionHeading {
+  font-family: var(--body-heading);
+  color: var(--fg-primary);
+  border-bottom: 2px solid white;
+}
+
+footer {
+  color: white;
+  border-top: 2px solid white;
+  font-family: var(--body-text);
+}
+footer a {
+  text-decoration: none;
+  color: var(--fg-primary);
+}
+footer a:visited {
+  color: var(--fg-primary);
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   footer {
-    color: white;
-    border-top: 2px solid white;
     padding: 2em 0.5em;
-    font-family: var(--body-text);
   }
-  footer a{
-    font-size: 1rem;
-    text-decoration: none;
-    color: var(--fg-primary);
+  footer a {
     font-size: 1.25em;
   }
-  footer a:visited{
-    color: var(--fg-primary);
+  .app {
+    width: 100%;
+  }
+  .sectionHeading {
+    font-size: 2rem;
+    margin-bottom: 1.2em;
   }
 }
 

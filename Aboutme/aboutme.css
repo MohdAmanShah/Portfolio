@@ -1,6 +1,24 @@
+.aboutme {
+  color: white;
+}
+div[role="introduction"] strong {
+  color: var(--fg-secondary);
+}
+div[role="introduction"] p {
+  font-family: var(--body-text);
+  font-weight: 300;
+}
+.para4::first-line {
+  color: var(--fg-primary);
+}
+.buildtogether {
+  text-decoration: none;
+  border-bottom: 2px solid var(--fg-secondary);
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
   .aboutme {
-    color: white;
     margin-bottom: 2em;
   }
   .personal-information {
@@ -9,36 +27,20 @@
   .aboutmeintro {
     padding: 10px;
   }
-  .aboutmeHeading {
-    font-family: var(--body-heading);
-    font-size: 2rem;
-    color: var(--fg-primary);
-    border-bottom: 2px solid white;
-  }
   div[role="introduction"] {
     padding: 10px;
-    padding-top: 30px;
-  }
-  div[role="introduction"] strong {
-    color: var(--fg-secondary);
   }
   div[role="introduction"] p {
-    font-family: var(--body-text);
     font-size: 1em;
-    font-weight: 300;
     line-height: 1.25em;
     margin-bottom: 10px;
   }
   .para4::first-line {
-    color: var(--fg-primary);
     font-size: 1.5em;
   }
   .buildtogether {
     font-size: 1em;
-    line-height: 1.5em;
-    text-decoration: none;
-    border-bottom: 2px solid var(--fg-secondary);
-    color: white;
+    line-height: 2.5em;
   }
 }
 

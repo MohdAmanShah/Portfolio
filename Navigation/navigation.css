@@ -1,14 +1,82 @@
+.navSection {
+  background-color: var(--bg-color);
+  position: fixed;
+  display: flex;
+  width: 100%;
+}
+.navigation {
+  background-color: var(--bg-color);
+}
+
+.cvbutton {
+  width: fit-content;
+}
+.cvbutton a {
+  border: 0;
+  border-radius: 10px;
+  background-color: var(--fg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-family: var(--banner-text);
+  font-weight: 600;
+  user-select: none;
+}
+.cvbutton a:visited {
+  background-color: var(--fg-secondary);
+  color: black;
+}
+.cvbutton a:active {
+  background-color: var(--fg-secondary);
+  color: black;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: darkcyan;
+  user-select: none;
+  font-family: var(--banner-text);
+}
+
+.nav-link:hover {
+  color: var(--fg-primary);
+  border-bottom: 2px solid white;
+
+  transition: color 400ms ease, border 200ms ease;
+}
+.nav-link:active {
+  color: var(--fg-primary);
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+.sociallinks {
+  display: flex;
+  list-style: none;
+}
+
+.social-link {
+  display: inline-block;
+  width: inherit;
+  height: inherit;
+  color: whitesmoke;
+}
+.social-link:hover {
+  color: var(--fg-primary);
+}
+
 @media screen and (max-width: 600px) {
-  header {
+  .navSection {
     z-index: 100;
-    background-color: var(--bg-color);
-    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    text-align: end;
     padding: 1.5em;
-    display: flex;
     justify-content: space-between;
   }
   .nav-toggle {
@@ -67,12 +135,9 @@
     padding-top: 100px;
     height: 90vh;
     width: 80vw;
-    background-color: var(--bg-color);
+
     transition: 300ms ease;
     border-bottom-right-radius: 10px;
-    /* box-shadow: 0px 200px 200px rgb(84, 118, 131),
-      -200px 200px 200px rgb(84, 118, 131), 200px 0px 200px rgba(84, 118, 131),
-      200px 0px 200px rgba(84, 118, 131); */
   }
   .hide {
     opacity: 0;
@@ -84,37 +149,16 @@
   .hide * {
     display: none;
   }
-  .cvbutton {
-    width: fit-content;
-  }
   .cvbutton a {
-    border: 0;
-    border-radius: 10px;
-    background-color: var(--fg-secondary);
     padding: 15px 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-    font-family: var(--banner-text);
     font-size: 1.3rem;
-    font-weight: 600;
-    user-select: none;
   }
-  .cvbutton a:visited {
-    color: black;
-  }
-  .cvbutton a:active {
-    color: black;
-  }
+
   .cvbutton a:hover {
     background-color: var(--fg-primary);
   }
   .navbar-nav {
     z-index: 200;
-    list-style: none;
-    display: flex;
     flex-direction: column;
     align-items: start;
     padding-top: 2em;
@@ -122,35 +166,19 @@
     gap: 1em;
   }
   .nav-link {
-    text-decoration: none;
-    color: darkcyan;
-    user-select: none;
-    font-family: var(--banner-text);
     font-size: 1.5rem;
     font-weight: 900;
     padding-bottom: 2px;
   }
-  .nav-link:hover {
-    color: var(--fg-primary);
-    border-bottom: 2px solid white;
 
-    transition: color 400ms ease, border 200ms ease;
-  }
-  .nav-link:active {
-    color: var(--fg-primary);
-    text-decoration: underline;
-    text-decoration-color: black;
-  }
   .socials {
     position: absolute;
     bottom: 3em;
     left: 2em;
   }
   .sociallinks {
-    display: flex;
     align-items: center;
     gap: 50px;
-    list-style: none;
     height: 100px;
     width: 60vw;
   }
@@ -158,25 +186,15 @@
     height: 60px;
     width: 60px;
   }
-  .social-link {
-    display: inline-block;
-    width: inherit;
-    height: inherit;
-  }
-  .social-link {
-    color: whitesmoke;
-  }
-  /* .social-link:hover {
-    color: var(--fg-primary);
-  } */
-  .blur{
+
+  .blur {
     filter: blur(10px);
   }
-  .disabled{
+  .disabled {
     pointer-events: none;
   }
-
 }
+
 @media screen and (min-width: 1080px) {
   header {
     width: 960px;
