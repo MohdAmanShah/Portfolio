@@ -21,9 +21,6 @@ div[role="introduction"] p {
   .aboutme {
     margin-bottom: 2em;
   }
-  .personal-information {
-    display: none;
-  }
   .aboutmeintro {
     padding: 10px;
   }
@@ -46,6 +43,27 @@ div[role="introduction"] p {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .aboutme {
+    margin-bottom: 2em;
+  }
+  .aboutmeintro {
+    padding: 10px;
+  }
+  div[role="introduction"] {
+    padding: 10px;
+  }
+  div[role="introduction"] p {
+    font-size: 1em;
+    line-height: 1.25em;
+    margin-bottom: 10px;
+  }
+  .para4::first-line {
+    font-size: 1.5em;
+  }
+  .buildtogether {
+    font-size: 1em;
+    line-height: 2.5em;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -58,4 +76,11 @@ div[role="introduction"] p {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 1440px) {
+  div[role="introduction"] p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+  }
 }

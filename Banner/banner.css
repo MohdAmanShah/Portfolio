@@ -33,6 +33,28 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+  .himessage {
+    margin-bottom: 0.1em;
+    font-size: 1.5em;
+  }
+  .name {
+    font-size: 2.3em;
+    margin-bottom: 0.5em;
+  }
+  .role {
+    font-size: 1.5em;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+  }
+  .contactmebanner {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  
   .himessage {
     margin-bottom: 0.1em;
     font-size: 1.5em;

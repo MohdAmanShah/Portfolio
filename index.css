@@ -69,6 +69,19 @@ footer a:visited {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  footer {
+    padding: 2em 0.5em;
+  }
+  footer a {
+    font-size: 1.25em;
+  }
+  .app {
+    width: 100%;
+  }
+  .sectionHeading {
+    font-size: 2rem;
+    margin-bottom: 0.75em;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -81,4 +94,14 @@ footer a:visited {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  .app{
+    margin: auto auto;
+    width: 1160px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .app{
+    margin: auto auto;
+    width: 1320px;
+  }
 }

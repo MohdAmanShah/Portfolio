@@ -1,21 +1,23 @@
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skillscontainer h2 {
+  width: fit-content;
+}
 
+.skill {
+  font-family: var(--body-heading);
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.skillimage {
+  width: 100%;
+  height: auto;
+}
 
 @media only screen and (max-width: 600px) {
   .skillscontainer {
@@ -23,25 +25,13 @@
   }
   /* heading  */
   .skillscontainer h2 {
-    width: fit-content;
-    font-family: var(--body-heading);
-    color: var(--fg-primary);
     font-size: 1.5em;
-    border-bottom: 2px solid white;
-    margin-bottom: 15px;
   }
   .skills {
-    display: flex;
-    flex-wrap: wrap;
     row-gap: 20px;
     column-gap: 10px;
   }
   .skill {
-    font-family: var(--body-heading);
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 10px;
     flex: 0 1 30%;
   }
@@ -50,14 +40,30 @@
     height: 80px;
     margin-bottom: 5px;
   }
-  .skillimage {
-    width: 100%;
-    height: auto;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .skillscontainer {
+    padding: 10px 30px;
+  }
+  /* heading  */
+  .skillscontainer h2 {
+    font-size: 1.5em;
+  }
+  .skills {
+    row-gap: 20px;
+    column-gap: 10px;
+  }
+  .skill {
+    gap: 10px;
+    flex: 0 1 23%;
+  }
+  .skillimagecontainer {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 5px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -66,8 +72,17 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .skill {
+    flex: 0 1 19%;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1440px) {
+  .skill{
+    flex: 0 1 11%;
+  }
 }

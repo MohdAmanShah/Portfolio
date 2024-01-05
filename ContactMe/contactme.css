@@ -1,30 +1,50 @@
+.contactme {
+  color: white;
+}
+.contactInfo {
+  display: flex;
+}
+.contact {
+  font-family: var(--body-text);
+  font-weight: 700;
+  display: inline-block;
+  border-radius: 10px;
+  width: fit-content;
+  background-color: var(--fg-secondary);
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .contactme{
-        padding: 0.5em;
-        color: white;
-        margin-bottom: 2em;
-    }
-    .contactInfo{
-        display: flex;
-        flex-direction: column;
-        padding-left: 1em;
-        gap: 0.75em;
-    }
-    .contact{
-        font-family: var(--body-text);
-        font-size: 1em;
-        font-weight: 700;
-        display: inline-block;
-        padding: 15px 20px;
-        border-radius: 10px;
-        width: fit-content;
-        background-color: var(--fg-secondary);
-    }
+  .contactme {
+    padding: 0.5em;
+    margin-bottom: 2em;
+  }
+  .contactInfo {
+    flex-direction: column;
+    padding-left: 1em;
+    gap: 0.75em;
+  }
+  .contact {
+    font-size: 1em;
+    padding: 15px 20px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  .contactme {
+    padding: 0.5em;
+    margin-bottom: 2em;
+  }
+  .contactInfo {
+    flex-direction: column;
+    padding-left: 1em;
+    gap: 0.75em;
+  }
+  .contact {
+    font-size: 1em;
+    padding: 15px 20px;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -33,8 +53,18 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .contactInfo {
+    flex-direction: row;
+    gap: 1em;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+}
+
+@media only screen and (min-width: 1440px) {
+  .contactInfo{
+    margin-top: 2em;
+  }
 }
