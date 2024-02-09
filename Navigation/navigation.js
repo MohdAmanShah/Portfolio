@@ -19,7 +19,10 @@ function HandleTogglerEvent(e) {
 }
 
 function HandleLinkSelectEvent(e) {
-  var ActiveLink = document.getElementsByClassName("activeLink")[0];
-  ActiveLink.classList.toggle("activeLink");
-  e.target.ClassList.toggle("activeLink");
+  var navLinks = document.getElementsByClassName("nav-link");
+  var linkArray = Array.from(navLinks);
+  linkArray.forEach((e, i, arr) => {
+    e.classList.remove('activeLink');
+  });
+  e.target.classList.add("activeLink");
 }

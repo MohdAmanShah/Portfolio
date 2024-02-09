@@ -57,7 +57,7 @@
 
   transition: color 400ms ease, border 200ms ease;
 }
-.activeLink {
+.nav-link.activeLink {
   color: var(--fg-primary);
   border-bottom: 2px solid white;
 }
