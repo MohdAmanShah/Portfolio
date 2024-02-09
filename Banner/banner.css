@@ -29,7 +29,8 @@
 .contactmebanner {
   text-decoration: none;
   color: white;
-  border-bottom: 2px solid red;
+  padding-bottom: 4px;
+  border-bottom: 4px solid red;
 }
 
 @media only screen and (max-width: 600px) {
